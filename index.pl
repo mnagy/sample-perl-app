@@ -19,12 +19,8 @@ print <<EOF
 EOF
 ;
 foreach (@$arrayref) {
-	print "MATCH:\n";
-	while (($key, $value) = each %{$_}) {
-		print "\t$key = $value\n";
-	}
 	my %result = %{$_};
-	print "<p>In $result{'place'}: $result{'celsius'}°C, $result{'conditions'}, Sun sets at $result{'sunset'}, last updated: $result{'updated'}.<p>";
+	print "<p>In $result{'place'}: $result{'celsius'}&deg;C, $result{'conditions'}, Sun sets at $result{'sunset'}, last updated: $result{'updated'}.<p>";
 }
 print <<EOF
 </body>
