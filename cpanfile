@@ -1,1 +1,1 @@
-requires 'Weather::Underground', '== 3.03';
+requires 'Math::Round', '== 0.06';
